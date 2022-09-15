@@ -1,0 +1,120 @@
+<!DOC TYPE html>
+<html>
+ <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Watsonisite- Information about Crypto-Site</title>
+ <link rel="stylesheet" href="style.css">
+ <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+crossorigin="anonymous"></script>
+ </head>
+ <body>
+ <div class="container">
+ <nav>
+ <img src="images/watsonite.jpg" class="logo">
+ <ul>
+ <li><a href="#">Home</a></li>
+ <li><a href="#">features</a></li>
+ <li><a href="#">about us</a></li>
+ <li><button class="loginbtn"
+
+onclick="document.getElementById('login-form').style.display='block'"
+ style="width:auto;">Login</button>
+ <div id="login-form"class='login-page'>
+ <div class="button-box">
+ <div id="btn"></div>
+ <button
+ type="'button"onclick='login()'class='toggle-btn'>Log
+In</button>
+ <button
+type='button'onclick='register()'class='toggle-btn'>Register</button>
+ </div>
+ <form id="login" class="'input-group-login">
+ <input
+type="text"class='input-field'placeholder='Email Id'required>
+ <input
+type="'password"class='input-field'placeholder='Enter Password'required>
+ <input
+type="checkbox"class='check-box'><span>Remember Password</span>
+ <button type="Submit"class='Submit-btn'>Log
+in</button>
+ </form>
+ <form id="register" class="input-group-register">
+ <input
+type="text"class='input-field'placeholder='First Name'required>
+ <input
+type="text"class='input-field'placeholder='Last Name'required>
+ <input
+type="email"class='input-field'placeholder='Email Id'required>
+ <input
+type="password"class='input-field'placeholder='Confirm Password'required>
+ <input type="checkbox"class='check-box'><span>I
+agree to the terms and conditions</span>
+ <button
+type="'submit"class='submit-btn'>Register</button>
+ </form>
+ </div>
+ <script>
+ var x=document.getElementById('login');
+ var y=document.getElementById('register');
+ var z=document.getElementById('btn');
+ function register()
+ {
+ x.style.left='-400px';
+ y.style.left='50px';
+ z.style.left='110px';
+ }
+ function login()
+ {
+ x.style.left='50px';
+ y.style.left='450px';
+ z.style.left='0px';
+ }
+ </script>
+ <script>
+ var modal=document.getElementById('login-form');
+ window.onclick=function(event)
+ {
+ if(event.target==modal)
+ {
+ modal.style.display="none";
+ }
+ }
+ </script>
+ </li>
+ </ul>
+ <a href="#" class="btn">EN</a>
+ </nav>
+ <div class="content">
+ <h1>BUY & <br> SELL <span>Crypto</span></h1>
+ <p>World's biggest Cryptocurrency exchange available on web
+<br>as well as mobile phone.</p>
+ <a href="#" class="btn">EXPLORE MORE</a>
+ </div>
+ <div class="coin-list">
+ <div class="coin">
+ <img src="images/bitcoin.jpg">
+ <div>
+ <h3>$<span id="bitcoin"></span></h3>
+ <p>Bitcoin</p>
+ </div>
+ </div>
+ <div class="coin">
+ <img src="images/etherium.jpg">
+ <div>
+ <h3>$<span id="ethereum"></span></h3>
+ <p>Ethereum</p>
+ </div>
+ </div>
+ <div class="coin">
+ <img src="images/dogecoin.jpg">
+ <div>
+ <h3><span id="dogecoin"></span></h3>
+ <p>dogecoin</p>
+ </div>
+ </div>
+ </div>
+ </div>
+ <script src="script.js"></script>
+ </body>
+</html>
