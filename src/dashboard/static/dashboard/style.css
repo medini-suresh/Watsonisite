@@ -1,61 +1,72 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
-   }
-   .container{
+}
+
+.container {
     width: 100%;
     height: 100vh;
-    background-image: url(images/crypto.jpg);
     background-position: center;
     background-size: cover;
     padding: 0 7%;
     color: #fff;
-   }
-   nav{
+}
+
+nav {
     width: 100%;
     padding: 20px 0;
     display: flex;
     align-items: center;
-   }
-   .logo{
+}
+
+.logo {
     width: 100px;
     cursor: pointer;
-   }
-   nav ul{
-    flex:1;
-   }
-   nav ul li{
+}
+
+nav ul {
+    flex: 1;
+}
+
+nav ul li {
     display: inline-block;
     margin: 10px 20px;
-   }
-   nav ul li a{
+}
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
-   }
-   nav .btn{
-    color:#fff;
+}
+
+nav .btn {
+    color: #fff;
     text-decoration: none;
     border: 1px solid #fff;
     padding: 10px 30px;
-    border-radius:20px;
-   }
-   .content{
-    margin-top:12%;
-   }
-   .content h1{
+    border-radius: 20px;
+}
+
+.content {
+    margin-top: 12%;
+}
+
+.content h1 {
     font-size: 88px;
     margin-bottom: 15px;
-   }
-   .content h1 span{
+}
+
+.content h1 span {
     color: #ff960b;
-   }
-   .content p{
-    line-height:22px;
-    font-size:14px;
-   }
-   .content .btn{
+}
+
+.content p {
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.content .btn {
     display: inline-block;
     margin-top: 30;
     background: #ff9600;
@@ -63,15 +74,17 @@
     text-decoration: none;
     padding: 15px 30px;
     border-radius: 30px;
-   }
-   .coin-list{
+}
+
+.coin-list {
     position: absolute;
     right: 5%;
     bottom: 50px;
     display: flex;
     align-items: center;
-   }
-   .coin{
+}
+
+.coin {
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -80,116 +93,146 @@
     border: 1px solid #ffff;
     padding: 20px 30px;
     border-radius: 8px;
-   }
-   .coin img{
+}
+
+.coin img {
     width: 40px;
     margin-right: 10px;
-   }
-   .coin h3{
-    color:rgb(237, 125, 88);
+}
+
+.coin h3 {
+    color: rgb(237, 125, 88);
     margin-bottom: 5px;
-   }
-   #login-form
-   {
-    display:none;
-   }
-   .form-box
-   {
-    width:380px;
-    height:480px;
-    position:relative;
-    margin:2% auto;
-    background:rgba(159, 50, 50, 0.3);
-    padding:10px;
-    overflow:hidden;
-   }
-   .button-box
-   {
-    width:220px;
+}
+
+#login-form {
+    display: none;
+}
+
+.form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 2% auto;
+    background: rgba(159, 50, 50, 0.3);
+    padding: 10px;
+    overflow: hidden;
+}
+
+.button-box {
+    width: 220px;
     margin: 35px auto;
-    position:relative;
+    position: relative;
     box-shadow: 0 0 20px 9px #2b1b151f;
-    border-radius:30px;
-   }
-   .toggle-btn
-   {
+    border-radius: 30px;
+}
+
+.toggle-btn {
     padding: 10px 30px;
     cursor: pointer;
-    border:0;
-    outline:none;
-    position:relative;
-   }
-   #btn
-   {
-    top:0;
-    left:0;
-    position:absolute;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
     width: 110px;
     height: 100%;
     background: #d87e17;
-    border-radius:30px;
+    border-radius: 30px;
     transition: .5s;
-   }
-   .input-group-login
-   {
-    top:150px;
-    position:absolute;
-    width:280px;
-    transition:.5s;
-   }
-   .input-group-register
-   {
-    top:120px;
+}
+
+.input-group-login {
+    top: 150px;
     position: absolute;
-    width:280px;
-    transition:.5s;
-   }
-   .input-field
-   {
-    width:100%;
-    padding:10px 0;
-    margin:5px 0;
-    border-left:0;
-    border-top:0;
-    border-right:0;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-group-register {
+    top: 120px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
     border-bottom: 1px solid #fff;
     outline: none;
-   }
-   .submit-btn
-   {
-    width:85%;
-    padding:10px 30px;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
     cursor: pointer;
     display: block;
     margin: auto;
     background: #F3C693;
     border: 0;
     outline: none;
-    border-radius:30px;
-   }
-   .check-box
-   {
+    border-radius: 30px;
+}
+
+.check-box {
     margin: 30px 10px 34px 0;
-   }
-   span{
-    color:rgb(84, 67, 34);
-    font-size:12px;
-    bottom:68px;
+}
+
+span {
+    color: rgb(84, 67, 34);
+    font-size: 12px;
+    bottom: 68px;
     position: absolute;
-   }
-   #login
-   {
-    left:50px;
-   }
-   #login input{
-    color:white;
-    font-size:15;
-   }
-   #register
-   {
-    left:450px;
-   }
-   #register input{
-    color:white;
-    font-size:15;
-   }
+}
+
+#login {
+    left: 50px;
+}
+
+#login input {
+    color: white;
+    font-size: 15;
+}
+
+#register {
+    left: 450px;
+}
+
+#register input {
+    color: white;
+    font-size: 15;
+}
+
+th {
+    color: #fff;
+}
+
+.coin_symbol {
+    color: #fff;
+}
+
+table {
+    page-break-inside: auto
+}
+
+tr {
+    page-break-inside: avoid;
+    page-break-after: auto
+}
+
+thead {
+    display: table-header-group
+}
+
+tfoot {
+    display: table-footer-group
+}
